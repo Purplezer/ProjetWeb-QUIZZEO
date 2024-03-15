@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/sf-black/64/000000/search.png">
+    <link rel="stylesheet" href="creation.css">
+    <title>Quizzeo</title>
+</head>
+
+<body>
+    <header>
+        <a class="home" href="home.php">
+            <span>Quiz</span><span>zeo.</span>
+        </a>
+        <div class="options">
+            <h2>Utilisateur</h2>
+            <a id="profil" href="dashboard.php">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Photo de profil">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="info-container">
+            <h1>Création de quiz</h1>
+            <img src="https://img.icons8.com/color/256/add-folder.png">
+        </div>
+        <div id="pageCreate">
+            <form action="test.php" method="post">
+                <div class="info-container">
+                    <input class="input-quiz" type="text" placeholder="Titre" id="titre" maxlength="20" required
+                        oninvalid="this.style.border='2px solid #ff5f45';">
+                    <h2>Difficulté</h2>
+                    <select name="role" class="input-quiz difficulty" placeholder="aze" id="difficulte" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="container-question">
+                    <div class="question">
+                        <div class="test"></div>
+                        <div class="number">
+                            <h3>1</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question1" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer1.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer2.1">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer3.1">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer4.1">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>2</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question2" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer2.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer2.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer2.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer2.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer2">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>3</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question3" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer3.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer3.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer3.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer3.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer3">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>4</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text"  id="question4" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer4.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer4.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer4.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer4.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer4">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>5</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question5" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer5.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer5.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer5.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer5.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer5">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>6</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question6" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer6.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer6.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer6.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer6.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer6">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>7</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question7" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer7.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer7.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer7.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer7.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer7">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>8</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question8" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer8.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer8.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer8.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer8.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer8">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>9</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question9" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer9.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer9.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer9.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer9.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer9">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-question">
+                    <div class="question">
+                        <div class="number">
+                            <h3>10</h3>
+                        </div>
+                        <h3>Question</h3>
+                        <input type="text" id="question10" placeholder="Quel est la couleur du cheval blanc de Henri IV ?">
+                    </div>
+                    <div class="container-answer">
+                        <div class="answer">
+                            <div>
+                                <label for="answer1" class="letter" id="answer10.1">A</label>
+                                <input type="text" name="answer1">
+                            </div>
+                            <div>
+                                <label for="answer2" class="letter" id="answer10.2">B</label>
+                                <input type="text" name="answer2">
+                            </div>
+                            <div>
+                                <label for="answer3" class="letter" id="answer10.3">C</label>
+                                <input type="text" name="answer3">
+                            </div>
+                            <div>
+                                <label for="answer4" class="letter" id="answer10.4">D</label>
+                                <input type="text" name="answer4">
+                            </div>
+                            <div class="check">
+                                <img src="https://img.icons8.com/fluency/256/checkmark.png">
+                                <label for="correctAnswer">Sélectionner la bonne réponse</label>
+                                <select name="correctAnswer" id="correctAnswer10">
+                                    <option value="answer1">A</option>
+                                    <option value="answer2">B</option>
+                                    <option value="answer3">C</option>
+                                    <option value="answer4">D</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input id="button-submit" type="submit" value="Créer">
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/sf-black/64/000000/search.png">
+    <link rel="stylesheet" href="inscription.css">
+    <title>Quizzeo</title>
+</head>
+
+<body>
+    <header>
+        <a class="home" href="accueil.html">
+            <span>Quiz</span><span>zeo.</span>
+        </a>
+    </header>
+    <div class="container">
+        <div class="icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/4218/4218472.png" alt="Lettres">
+            <img src="https://cdn-icons-png.flaticon.com/512/4058/4058331.png" alt="Fruit">
+            <img src="https://cdn-icons-png.flaticon.com/512/4218/4218113.png" alt="Ballon de basket">
+            <img src="https://cdn-icons-png.flaticon.com/512/4218/4218478.png" alt="Couleurs">
+            <img src="https://cdn-icons-png.flaticon.com/512/5204/5204758.png" alt="Crayon">
+            <img src="https://cdn-icons-png.flaticon.com/512/4218/4218493.png" alt="Loupe">
+            <img src="https://cdn-icons-png.flaticon.com/512/4218/4218484.png" alt="Globe terrestre">
+        </div>
+        <div class="container-login">
+            <div class="imgLogin">
+                <h1>Compte</h1>
+            </div>
+            <form method="post" action="inscription.php">
+                <input type="text" name="pseudo" placeholder="Nom d'utilisateur" id="pseudo" required>
+                <input type="email" name="email" placeholder="E-mail" id="pseudo" required>
+                <input type="password" name="password" placeholder="Mot de passe" id="password" required>
+                <input type="password" name="password2" placeholder="Confirmer le mot de passe" id="password" required>
+                <select name="role" id="role">
+                    <option value="1">Utilisateur</option>
+                    <option value="2">Quizzeur</option>
+                </select>
+                <input class="submit" type="submit" value="Continuer">
+                <div class="other">
+                    <div>
+                        <span>Tu as déjà un compte ?</span>
+                        <a href="login.html">Se connecter</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

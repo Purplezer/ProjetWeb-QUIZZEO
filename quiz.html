@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/sf-black/64/000000/search.png">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quizzeo</title>
+</head>
+
+<body>
+    <audio id="audio" preload="auto" loop>
+        <source src="quiz-show-timer-30-sec-music-for-content-creator.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const audio = document.querySelector('#audio');
+          audio.play();
+        });
+      </script>
+    <header>
+        <a class="home" href="home.php">
+            <span>Quiz</span><span>zeo.</span>
+        </a>
+        <div class="options">
+            <h2>Utilisateur</h2>
+            <a id="profil" href="dashboard.php">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Photo de profil">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-question">
+            <div class="number-question">
+                <h2>Question 1/10</h2>
+                <div class="container-countdown">
+                    <h2 id="countdown">60</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-answer">
+            <div class="question">
+                <h3>De couleur est le cheval blanc d'Henri IV</h3>
+            </div>
+            <form action="#">
+                <div class="answers">
+					<label class="answer">
+						<input type="radio" name="option" value="'.$index.'">
+						Marron
+					</label>
+					<label class="answer">
+						<input type="radio" name="option" value="'.$index.'">
+						Blanc
+					</label>
+					<label class="answer">
+						<input type="radio" name="option" value="'.$index.'">
+						Noir
+					</label>
+					<label class="answer">
+						<input type="radio" name="option" value="'.$index.'">
+						Rouge
+					</label>
+                </div>
+                <button type="submit" id="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+    
+       
